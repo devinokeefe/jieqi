@@ -1,0 +1,45 @@
+{
+  "a": "jqe",
+  "b": "musesfish",
+  "games": 1000,
+  "w": 969,
+  "d": 11,
+  "l": 20,
+  "score": 0.9745,
+  "elo": 632.8966652078748,
+  "elo_lo": 577.6603695249701,
+  "elo_hi": 712.4221238699312,
+  "pent": {
+    "pairs": 500,
+    "score": 0.9745,
+    "elo": 632.8966652078748,
+    "elo_lo": 577.2842484878086,
+    "elo_hi": 713.2113435622452
+  },
+  "reasons": {
+    "BLACK_LOSES": 497,
+    "DRAW": 11,
+    "RED_LOSES": 492
+  },
+  "args": {
+    "engine": [
+      "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+      "musesfish=musesfish"
+    ],
+    "games": 1000,
+    "movetime": 2000,
+    "tc": "",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 256,
+    "threads": 1,
+    "concurrency": 1,
+    "seed": 72335360501015,
+    "out": "engine/runs/f2s1-v015g-musesfish",
+    "scores": true,
+    "resume": true,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

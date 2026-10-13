@@ -1,0 +1,7 @@
+jqe_difftest 20000 1, built from engine/ of this release (the source of jqe v0.15g), 12 October 2026
+games 20000 positions 3844455 moves-checked 59423611 nolegal 9121 draw80 10630 capped 249 failures 0
+chase threat sets compared 7688910 (non-empty 815150)
+repetition cycles 19375: draw 19124, stm-wins 61, stm-loses 190, failures 0
+start depth 1: base perft 44, chance leaves 259, expected base leaves 44.0000
+start depth 2: base perft 1926, chance leaves 66462, expected base leaves 1920.1333
+start depth 3: base perft 83907, chance leaves 13862869, expected base leaves 73967.0667

@@ -1,0 +1,44 @@
+{
+  "a": "jqe",
+  "b": "universe",
+  "games": 1000,
+  "w": 991,
+  "d": 0,
+  "l": 9,
+  "score": 0.991,
+  "elo": 816.732458018381,
+  "elo_lo": 728.6690423814252,
+  "elo_hi": 1000.3203439332243,
+  "pent": {
+    "pairs": 500,
+    "score": 0.991,
+    "elo": 816.732458018381,
+    "elo_lo": 728.9855918297236,
+    "elo_hi": 998.8510838991807
+  },
+  "reasons": {
+    "BLACK_LOSES": 503,
+    "RED_LOSES": 497
+  },
+  "args": {
+    "engine": [
+      "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+      "universe=universe"
+    ],
+    "games": 1000,
+    "movetime": 2000,
+    "tc": "",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 256,
+    "threads": 1,
+    "concurrency": 1,
+    "seed": 72335360501015,
+    "out": "engine/runs/f2s1-v015g-universe",
+    "scores": true,
+    "resume": true,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

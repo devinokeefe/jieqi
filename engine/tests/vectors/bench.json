@@ -1,0 +1,44 @@
+{
+ "depth": 7,
+ "hash": 64,
+ "positions": [
+  {
+   "fen": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1",
+   "move": "a3a4",
+   "score": 69,
+   "nodes": 23418
+  },
+  {
+   "fen": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/4P4/X1X3X1X/1X5X1/9/XXXXKXXXX b R2A2C2P4N2B2r2a2c2p5n2b2 1 1",
+   "move": "i6i5",
+   "score": -2,
+   "nodes": 8003
+  },
+  {
+   "fen": "r1xxkxxxx/9/1x5c1/x1x1x1x1x/9/9/X1X1X1X1X/1C5X1/9/XXXXKXXXX w R2A2C1P5N2B2r1a2c1p5n2b2 2 2",
+   "move": "b2e2",
+   "score": 101,
+   "nodes": 6940
+  },
+  {
+   "fen": "2xakxxxx/4r4/1x5c1/x1x1x1x1p/9/2P6/X1X1X1X1X/1C5X1/9/XXXXKXXXX w R2A2C1P4N2B2r1a1c1p4n2b2 0 4",
+   "move": "h0g2",
+   "score": -162,
+   "nodes": 5641
+  },
+  {
+   "fen": "4k4/9/9/9/9/9/9/9/4A4/3RK4 w - 0 1",
+   "move": "d0d8",
+   "score": 31997,
+   "nodes": 307
+  },
+  {
+   "fen": "3ak4/4a4/9/9/9/9/9/9/9/3RK4 w - 0 1",
+   "move": "d0d8",
+   "score": 1293,
+   "nodes": 1006
+  }
+ ],
+ "nodes": 45315,
+ "note": "The fourth FEN has 17 Red pieces. set_fen stops at the 17th (i0) and returns false unchecked, so the bench searches: that board without i0's piece, Red to move, no-capture count 0, key 0, an empty history (lastIrrev 0), and urn and urnTotal as the previous bench position (the third FEN) set them, since they are not reset before the failure (checked with a debug copy of uci.cpp)."
+}

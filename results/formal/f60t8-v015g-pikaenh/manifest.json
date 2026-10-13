@@ -1,0 +1,70 @@
+{
+  "name": "f60t8-v015g-pikaenh",
+  "jqe": {
+    "path": "engine/bin/jqe-v0.15g",
+    "sha256": "d382bce0685847547ee8bda2ce9a257ca1cdfab6f0c60fa4ef8fd4bcbd95c03d"
+  },
+  "net": {
+    "path": "engine/nets/it014.jqn",
+    "sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+  },
+  "opponent": {
+    "key": "pikaenh",
+    "options": {},
+    "files": {
+      "binary": {
+        "path": "$JIEQI_OPPONENTS/pikajieqi-enhanced/src/PikaJieQi",
+        "sha256": "0c55297d990acf7de15c149a5f5bcf0504937832d4a1b8bdcc039aafac9cf224"
+      }
+    }
+  },
+  "pairs": 500,
+  "clock": "--tc 60+0.6",
+  "threads": 8,
+  "hash_mb": 1024,
+  "concurrency": 1,
+  "ponder": false,
+  "seed": 72335360501015,
+  "book": "default: jqe formal deal book 1",
+  "command": [
+    "python3",
+    "engine/tools/match.py",
+    "--engine",
+    "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+    "--engine",
+    "pikaenh=pikaenh",
+    "--games",
+    "1000",
+    "--tc",
+    "60+0.6",
+    "--threads",
+    "8",
+    "--hash",
+    "1024",
+    "--concurrency",
+    "1",
+    "--seed",
+    "72335360501015",
+    "--scores",
+    "--resume",
+    "--out",
+    "engine/runs/f60t8-v015g-pikaenh"
+  ],
+  "created_utc": "2026-10-06T09:48:48Z",
+  "source": {
+    "commit": "4e09b126eda4ce9023cb4382e78b4c31904304ea",
+    "describe": "jqe-v0.15g-it014-11-g4e09b126",
+    "engine_src_dirty": false
+  },
+  "host": {
+    "cpu": "Intel(R) Core(TM) i9-14900K",
+    "logical_cpus": 32,
+    "kernel": "6.18.40.1-microsoft-standard-WSL2",
+    "loadavg_at_start": [
+      9.0,
+      9.0,
+      9.0
+    ]
+  },
+  "notes": "Engine failures void a game (void.jsonl, replayed once); time forfeits count as losses."
+}

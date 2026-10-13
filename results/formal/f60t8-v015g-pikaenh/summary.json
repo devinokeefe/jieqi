@@ -1,0 +1,45 @@
+{
+  "a": "jqe",
+  "b": "pikaenh",
+  "games": 1000,
+  "w": 764,
+  "d": 12,
+  "l": 224,
+  "score": 0.77,
+  "elo": 209.9051556619556,
+  "elo_lo": 185.45943828724822,
+  "elo_hi": 236.36514190627872,
+  "pent": {
+    "pairs": 500,
+    "score": 0.77,
+    "elo": 209.9051556619556,
+    "elo_lo": 186.3515618138865,
+    "elo_hi": 235.32280980706864
+  },
+  "reasons": {
+    "BLACK_LOSES": 523,
+    "RED_LOSES": 465,
+    "DRAW": 12
+  },
+  "args": {
+    "engine": [
+      "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+      "pikaenh=pikaenh"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "60+0.6",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 1024,
+    "threads": 8,
+    "concurrency": 1,
+    "seed": 72335360501015,
+    "out": "engine/runs/f60t8-v015g-pikaenh",
+    "scores": true,
+    "resume": true,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

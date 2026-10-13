@@ -1,0 +1,66 @@
+{
+  "schema": "jieqi-historical-rule-evidence-v0",
+  "profile_id": "tiantian-sanya-2017-partial-evidence",
+  "executable": false,
+  "selected_for_benchmarks": false,
+  "source_url": "https://xiangqi.qq.com/webplat/info/news_version3/15003/24026/24044/24047/m15147/201710/644928.shtml",
+  "source_scope": "Official 2017 Sanya championship, played through Tiantian app; not a claim about the current app",
+  "page_timestamp": "2017-11-14 15:43:20",
+  "document_signature_date": "2017-10-13",
+  "event_dates": "2017-12-13 through 2017-12-16",
+  "options": {
+    "captured_dark_visibility": {
+      "value": "capturer_only",
+      "evidence": "Section VII.10 requires preventing the opponent from seeing the captured-dark-piece display."
+    },
+    "perpetual_check_limit_rounds": {
+      "value": 6,
+      "exact_detection_semantics": "unresolved"
+    },
+    "perpetual_chase_limit_rounds": {
+      "value": 6,
+      "exact_detection_semantics": "unresolved"
+    },
+    "perpetual_chase_exempt_attacker_types": {
+      "value": [
+        "soldier",
+        "king",
+        "advisor",
+        "elephant"
+      ]
+    },
+    "neutral_repetition_occurrences": {
+      "value": 5,
+      "scope": "neither check nor chase",
+      "position_equivalence": "unresolved"
+    },
+    "no_progress_limit_plies": {
+      "value": 120
+    },
+    "no_progress_reset": {
+      "value": "capture",
+      "noncapture_reveal_details": "not stated explicitly"
+    },
+    "no_progress_check_counting": {
+      "value": "both_sides_checking_rounds_counted_up_to_twenty",
+      "precise_ply_accounting": "ambiguous; do not silently equate rounds to a specific check/evasion implementation"
+    },
+    "insufficient_material": {
+      "value": "automatic_draw_without_attacking_material",
+      "attacking_piece_definition": "unresolved, including hidden pieces"
+    },
+    "adjudication_authority": {
+      "value": "app_plus_human_referee"
+    }
+  },
+  "manual_tournament_comparator": {
+    "source_url": "https://xiangqi.qq.com/webplat/info/news_version3/15003/20947/20948/20949/20951/m13960/201707/605503.shtml",
+    "source_scope": "Wenzhou in-person event, published on official site 2017-07-07; not the app profile",
+    "no_progress_activation": "after_all_dark_pieces_are_revealed",
+    "no_progress_limit_rounds": 40,
+    "no_progress_claim": "declared_manual_count_with_referee_confirmation",
+    "claimant_check_moves_counted_maximum": 6,
+    "insufficient_material": "referee_may_draw_simple_fully_revealed_positions"
+  },
+  "benchmark_decision": "Retain the coherent pinned Pikafish helper fallback until an exact executable Tiantian interpretation is validated; never splice these numbers into that helper and call it Tiantian."
+}

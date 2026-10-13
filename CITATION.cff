@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+type: software
+title: "jqe, an engine for Jieqi"
+abstract: >-
+  An alpha-beta engine for Jieqi, the variant of xiangqi in which every piece but the general
+  starts face down on a random deal, with chance nodes for face-down moves and a small NNUE
+  network trained on its own games; an independent rules referee; and the records of its
+  matches against other Jieqi engines, with the scripts that recompute every result from them.
+authors:
+  - family-names: "O'Keefe"
+    given-names: "Devin"
+version: 0.1.0
+date-released: 2026-10-13
+license: MIT
+repository-code: "https://github.com/devinokeefe/jieqi"
+keywords:
+  - jieqi
+  - xiangqi
+  - game engine
+  - alpha-beta search
+  - NNUE

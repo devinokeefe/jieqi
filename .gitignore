@@ -1,0 +1,22 @@
+# Builds
+build/
+engine/build*/
+__pycache__/
+*.pyc
+.venv/
+
+# Local output of the engine's tools: match runs, training data, exploiter and RL state, engine snapshots
+engine/runs/
+engine/data/
+engine/exploit/
+engine/rl/
+engine/bin/
+
+# Nets: only the two in the release are tracked
+engine/nets/*
+!engine/nets/it014.jqn
+!engine/nets/xpl-xpl1-r5/
+engine/nets/xpl-xpl1-r5/*
+!engine/nets/xpl-xpl1-r5/last.jqn
+*.nnue
+*.pt

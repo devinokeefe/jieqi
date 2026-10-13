@@ -1,0 +1,45 @@
+{
+  "a": "jqe",
+  "b": "pikafish-old",
+  "games": 1000,
+  "w": 780,
+  "d": 14,
+  "l": 206,
+  "score": 0.787,
+  "elo": 227.03805156813073,
+  "elo_lo": 202.045596985994,
+  "elo_hi": 254.28478389897347,
+  "pent": {
+    "pairs": 500,
+    "score": 0.787,
+    "elo": 227.03805156813073,
+    "elo_lo": 202.44238096155146,
+    "elo_hi": 253.81372091103626
+  },
+  "reasons": {
+    "BLACK_LOSES": 517,
+    "RED_LOSES": 469,
+    "DRAW": 14
+  },
+  "args": {
+    "engine": [
+      "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+      "pikafish-old=pikafish-old"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "60+0.6",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 1024,
+    "threads": 8,
+    "concurrency": 1,
+    "seed": 72335360501015,
+    "out": "engine/runs/f60t8-v015g-pikafish-old",
+    "scores": true,
+    "resume": true,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}

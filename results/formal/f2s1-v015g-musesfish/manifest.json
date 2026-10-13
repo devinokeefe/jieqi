@@ -1,0 +1,70 @@
+{
+  "name": "f2s1-v015g-musesfish",
+  "jqe": {
+    "path": "engine/bin/jqe-v0.15g",
+    "sha256": "d382bce0685847547ee8bda2ce9a257ca1cdfab6f0c60fa4ef8fd4bcbd95c03d"
+  },
+  "net": {
+    "path": "engine/nets/it014.jqn",
+    "sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+  },
+  "opponent": {
+    "key": "musesfish",
+    "options": {},
+    "files": {
+      "binary": {
+        "path": "adapters/musesfish_uci/run.sh",
+        "sha256": "01d79fc90b6374ecdd0e28a026953b0454b4d387575576f9ede70a89b28950f7"
+      }
+    }
+  },
+  "pairs": 500,
+  "clock": "--movetime 2000",
+  "threads": 1,
+  "hash_mb": 256,
+  "concurrency": 1,
+  "ponder": false,
+  "seed": 72335360501015,
+  "book": "default: jqe formal deal book 1",
+  "command": [
+    "python3",
+    "engine/tools/match.py",
+    "--engine",
+    "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+    "--engine",
+    "musesfish=musesfish",
+    "--games",
+    "1000",
+    "--movetime",
+    "2000",
+    "--threads",
+    "1",
+    "--hash",
+    "256",
+    "--concurrency",
+    "1",
+    "--seed",
+    "72335360501015",
+    "--scores",
+    "--resume",
+    "--out",
+    "engine/runs/f2s1-v015g-musesfish"
+  ],
+  "created_utc": "2026-10-05T16:34:38Z",
+  "source": {
+    "commit": "7a65e28c41bdcfd20ec24bc7b19a5848b428a8a7",
+    "describe": "jqe-v0.15g-it014-3-g7a65e28c",
+    "engine_src_dirty": false
+  },
+  "host": {
+    "cpu": "Intel(R) Core(TM) i9-14900K",
+    "logical_cpus": 32,
+    "kernel": "6.18.40.1-microsoft-standard-WSL2",
+    "loadavg_at_start": [
+      9.00439453125,
+      9.0947265625,
+      9.423828125
+    ]
+  },
+  "notes": "Engine failures void a game (void.jsonl, replayed once); time forfeits count as losses."
+}

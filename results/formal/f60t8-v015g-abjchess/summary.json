@@ -1,0 +1,44 @@
+{
+  "a": "jqe",
+  "b": "abjchess",
+  "games": 1000,
+  "w": 701,
+  "d": 24,
+  "l": 275,
+  "score": 0.713,
+  "elo": 158.0830532471493,
+  "elo_lo": 135.25517537963162,
+  "elo_hi": 182.2667956884008,
+  "pent": {
+    "pairs": 500,
+    "score": 0.713,
+    "elo": 158.0830532471493,
+    "elo_lo": 136.16350599899638,
+    "elo_hi": 181.24960241890471
+  },
+  "reasons": {
+    "RED_LOSES": 456,
+    "BLACK_LOSES": 520,
+    "DRAW": 24
+  },
+  "args": {
+    "engine": [
+      "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+      "abjchess=abjchess"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "60+0.6",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 1024,
+    "threads": 8,
+    "concurrency": 1,
+    "seed": 72335360501015,
+    "out": "engine/runs/f60t8-v015g-abjchess",
+    "scores": true,
+    "resume": true,
+    "ponder": false,
+    "sprt": null
+  }
+}

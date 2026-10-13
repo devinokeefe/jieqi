@@ -1,0 +1,252 @@
+{
+  "profile_id": "tiantian-intended-pikafish-fallback-v0",
+  "status": "selected default fallback implemented and targeted-tested; alternative values remain specifications; 10M and current Tiantian equivalence unverified",
+  "board": {
+    "files": 9,
+    "ranks": 10,
+    "red_forward": "+rank",
+    "red_first": true
+  },
+  "initial_hidden_counts": {
+    "rook": 2,
+    "horse": 2,
+    "elephant": 2,
+    "advisor": 2,
+    "cannon": 2,
+    "soldier": 5
+  },
+  "options": {
+    "captured_dark_visibility": {
+      "value": "capturer_only",
+      "allowed": [
+        "capturer_only",
+        "both",
+        "neither"
+      ],
+      "evidence": "Pinned sources and official 2017 Sanya rule VII.10 support capturer-only; current-app continuity unverified. See rules-tiantian-2017-evidence-v0.json."
+    },
+    "setup_assignment": {
+      "value": "seeded_uniform_per_color_permutation",
+      "allowed": [
+        "seeded_uniform_per_color_permutation",
+        "conditional_lazy_draw"
+      ],
+      "evidence": "equivalent chance laws only when conditional pools are respected"
+    },
+    "dark_move_role": {
+      "value": "original_square_role",
+      "allowed": [
+        "original_square_role"
+      ],
+      "evidence": "verified in pinned sources"
+    },
+    "reveal_timing": {
+      "value": "after_move_before_opponent_turn",
+      "allowed": [
+        "after_move_before_opponent_turn"
+      ],
+      "evidence": "verified in pinned sources"
+    },
+    "revealed_advisor_scope": {
+      "value": "whole_board",
+      "allowed": [
+        "whole_board",
+        "palace_only"
+      ],
+      "evidence": "verified Pikafish/JieqiBox"
+    },
+    "dark_advisor_scope": {
+      "value": "own_palace",
+      "allowed": [
+        "own_palace",
+        "whole_board"
+      ],
+      "evidence": "verified Pikafish/JieqiBox"
+    },
+    "revealed_elephant_scope": {
+      "value": "whole_board",
+      "allowed": [
+        "whole_board",
+        "own_half"
+      ],
+      "evidence": "verified Pikafish/JieqiBox"
+    },
+    "elephant_eye": {
+      "value": "blocked_midpoint",
+      "allowed": [
+        "blocked_midpoint",
+        "unblocked_leap"
+      ],
+      "evidence": "verified Pikafish lame-leaper generation"
+    },
+    "soldier_crossing": {
+      "value": "current_rank",
+      "allowed": [
+        "current_rank"
+      ],
+      "evidence": "verified Pikafish bitboard.h"
+    },
+    "check_evasion": {
+      "value": "mandatory",
+      "allowed": [
+        "mandatory",
+        "king_capture_variant"
+      ],
+      "evidence": "Pikafish; some coursework repositories differ"
+    },
+    "flying_general": {
+      "value": "facing_kings_illegal",
+      "allowed": [
+        "facing_kings_illegal"
+      ],
+      "evidence": "verified Pikafish king/check code"
+    },
+    "stalemate_result": {
+      "value": "loss_for_side_to_move",
+      "allowed": [
+        "loss_for_side_to_move",
+        "draw"
+      ],
+      "evidence": "JieqiBox rules; JieqiArena implementation differs"
+    },
+    "repetition_policy": {
+      "value": "pikafish_jieqi_9b963f7_root_adjudication",
+      "allowed": [
+        "pikafish_jieqi_9b963f7_root_adjudication",
+        "tiantian_verified_future",
+        "simple_threefold_draw_diagnostic_only"
+      ],
+      "evidence": "Direct pinned helper and original native implementation agree on 42 histories / 429 prefixes; snapshot/rollback masks verified. See native-chase-evidence-20260928.json."
+    },
+    "perpetual_check": {
+      "value": "pikafish_jieqi_9b963f7",
+      "allowed": [
+        "pikafish_jieqi_9b963f7",
+        "tiantian_verified_future"
+      ],
+      "evidence": "Direct pinned helper and original native implementation agree on 42 histories / 429 prefixes; snapshot/rollback masks verified. See native-chase-evidence-20260928.json."
+    },
+    "perpetual_chase": {
+      "value": "pikafish_jieqi_9b963f7",
+      "allowed": [
+        "pikafish_jieqi_9b963f7",
+        "tiantian_verified_future"
+      ],
+      "evidence": "Direct pinned helper and original native implementation agree on 42 histories / 429 prefixes; snapshot/rollback masks verified. See native-chase-evidence-20260928.json."
+    },
+    "no_progress_limit_plies": {
+      "value": 80,
+      "allowed": [
+        80,
+        120
+      ],
+      "evidence": "80 is the coherent pinned Pikafish fallback; official 2017 Tiantian rules specify 120 with unresolved check-count details. Not certified current Tiantian."
+    },
+    "no_progress_reset": {
+      "value": "capture_only",
+      "allowed": [
+        "capture_only",
+        "capture_or_reveal",
+        "capture_reveal_or_soldier_advance"
+      ],
+      "evidence": "pinned Pikafish do_move/do_flip; no reset on noncapture reveal"
+    },
+    "no_progress_check_counting": {
+      "value": "count_all_plies",
+      "allowed": [
+        "count_all_plies",
+        "exclude_check_and_evasion"
+      ],
+      "evidence": "Pikafish fallback; Qizhe uses exclusions"
+    },
+    "terminal_precedence": {
+      "value": "no_legal_move_loss_before_no_progress_draw",
+      "allowed": [
+        "no_legal_move_loss_before_no_progress_draw"
+      ],
+      "evidence": "verified at Pikafish rule40 boundary"
+    },
+    "insufficient_material": {
+      "value": "no_automatic_shortcut",
+      "allowed": [
+        "no_automatic_shortcut",
+        "kings_only_draw"
+      ],
+      "evidence": "pinned rule_judge has no material-draw branch despite stale comment"
+    },
+    "absolute_ply_limit": {
+      "value": null,
+      "allowed": [
+        null,
+        200,
+        400
+      ],
+      "evidence": "none confirmed in pinned rule_judge; infrastructure cap is not a draw"
+    },
+    "repetition_occurrences": {
+      "value": 3,
+      "allowed": [
+        3,
+        2
+      ],
+      "evidence": "New pinned helper at search ply zero requires two prior matches; classical helper differs."
+    },
+    "repetition_responsibility_interval": {
+      "value": "through_second_prior_match",
+      "allowed": [
+        "through_second_prior_match",
+        "tiantian_verified_future"
+      ],
+      "evidence": "Do not reduce to nearest cycle when cycles differ."
+    },
+    "repetition_vs_no_progress_precedence": {
+      "value": "repetition_first",
+      "allowed": [
+        "repetition_first",
+        "clock_first"
+      ],
+      "evidence": "Pinned rule_judge tests repetition before 80-ply clock."
+    },
+    "mixed_check_chase": {
+      "value": "draw_when_neither_side_perpetually_checks",
+      "allowed": [
+        "draw_when_neither_side_perpetually_checks",
+        "tiantian_verified_future"
+      ],
+      "evidence": "New detect_chases returns draw on intervening check; classical branch differs."
+    },
+    "chase_renewal": {
+      "value": "new_qualifying_target_every_own_move",
+      "allowed": [
+        "new_qualifying_target_every_own_move",
+        "tiantian_verified_future"
+      ],
+      "evidence": "All attackers considered; continued preexisting threat is excluded."
+    },
+    "chase_target_identity": {
+      "value": "same_physical_piece",
+      "allowed": [
+        "same_physical_piece",
+        "tiantian_verified_future"
+      ],
+      "evidence": "Intersect stable target IDs across the full interval."
+    },
+    "chase_hypothetical_dark_advisor_scope": {
+      "value": "pinned_helper_unrestricted",
+      "allowed": [
+        "pinned_helper_unrestricted",
+        "own_palace"
+      ],
+      "evidence": "Direct initialized snapshot probes confirm d0 dark-advisor c1 chase target despite illegal ordinary capture, including mirror/color-rank transforms; not certified Tiantian."
+    },
+    "chase_hypothetical_reveal": {
+      "value": "retain_public_positional_type",
+      "allowed": [
+        "retain_public_positional_type",
+        "tiantian_verified_future"
+      ],
+      "evidence": "Pinned hypothetical chase capture does not call do_flip; no true identity access."
+    }
+  },
+  "historical_tiantian_evidence": "configs/rules-tiantian-2017-evidence-v0.json"
+}

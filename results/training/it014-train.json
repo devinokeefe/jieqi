@@ -1,0 +1,88 @@
+{
+  "args": {
+    "data": [
+      "engine/data/rl-it006.bin",
+      "engine/data/rl-it007.bin",
+      "engine/data/rl-it008.bin",
+      "engine/data/big-it006-a.bin",
+      "engine/data/big-it006-b-train.bin",
+      "engine/data/big-it009-a.bin",
+      "engine/data/big-it009-0.bin",
+      "engine/data/big-it010-0.bin",
+      "engine/data/big-it010-1.bin",
+      "engine/data/big-it011-0.bin"
+    ],
+    "out": "engine/nets/cand-it014",
+    "ft": 256,
+    "l1": 16,
+    "l2": 32,
+    "lam": 0.7,
+    "k": 0,
+    "batch": 16384,
+    "epochs": 4.82,
+    "lr": 0.001,
+    "wd": 0.0,
+    "max_records": 0,
+    "keep_captures": false,
+    "min_ply": 0,
+    "init": "",
+    "seed": 1,
+    "factor": false,
+    "stacks": 1,
+    "kb": 1,
+    "val_file": "engine/data/val-it006-b1m.bin",
+    "val_max": 1000000,
+    "data_on_gpu": false,
+    "stream": 30000000,
+    "block": 1000000
+  },
+  "K": 430,
+  "records": 81937318,
+  "log": [
+    {
+      "epoch": 1,
+      "step": 4999,
+      "train": 0.01753103932871398,
+      "val": 0.015376223354184877,
+      "val_result_logloss": 0.40518878106910616,
+      "lr": 0.0009338201714521287,
+      "sec": 247.52469038963318
+    },
+    {
+      "epoch": 2,
+      "step": 9998,
+      "train": 0.014110524510839184,
+      "val": 0.01485453573385288,
+      "val_result_logloss": 0.4021397758540658,
+      "lr": 0.0006784854227390817,
+      "sec": 461.87446212768555
+    },
+    {
+      "epoch": 3,
+      "step": 14997,
+      "train": 0.013830133694220148,
+      "val": 0.014690389626623961,
+      "val_result_logloss": 0.401333066332377,
+      "lr": 0.0003426620542523904,
+      "sec": 676.69757771492
+    },
+    {
+      "epoch": 4,
+      "step": 19995,
+      "train": 0.013676215658615045,
+      "val": 0.014528107497603254,
+      "val_result_logloss": 0.4009252389055004,
+      "lr": 7.825281368580009e-05,
+      "sec": 893.0013220310211
+    },
+    {
+      "epoch": 5,
+      "step": 24104,
+      "train": 0.01357955511443609,
+      "val": 0.014452601349554759,
+      "val_result_logloss": 0.4007394655483869,
+      "lr": 1.0000047008868232e-06,
+      "sec": 1074.0069649219513
+    }
+  ]
+}

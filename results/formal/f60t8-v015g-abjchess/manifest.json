@@ -1,0 +1,76 @@
+{
+  "name": "f60t8-v015g-abjchess",
+  "jqe": {
+    "path": "engine/bin/jqe-v0.15g",
+    "sha256": "d382bce0685847547ee8bda2ce9a257ca1cdfab6f0c60fa4ef8fd4bcbd95c03d"
+  },
+  "net": {
+    "path": "engine/nets/it014.jqn",
+    "sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+  },
+  "opponent": {
+    "key": "abjchess",
+    "options": {
+      "EvalFile": "$JIEQI_OPPONENTS/ab-jchess-v02b-source-build/abjchess-20260911.nnue"
+    },
+    "files": {
+      "binary": {
+        "path": "$JIEQI_OPPONENTS/ab-jchess-v02b-header-repair1/src/AB-JChess",
+        "sha256": "079db4d826ca5259b1a2d92c82b6c0d84cea1f5c247fc1212e4f0e2cf8716f65"
+      },
+      "EvalFile": {
+        "path": "$JIEQI_OPPONENTS/ab-jchess-v02b-source-build/abjchess-20260911.nnue",
+        "sha256": "7a229d324e50d2b0acf3e5878a8f876b96a24b75d16c8492a3c3bf8e1418d944"
+      }
+    }
+  },
+  "pairs": 500,
+  "clock": "--tc 60+0.6",
+  "threads": 8,
+  "hash_mb": 1024,
+  "concurrency": 1,
+  "ponder": false,
+  "seed": 72335360501015,
+  "book": "default: jqe formal deal book 1",
+  "command": [
+    "python3",
+    "engine/tools/match.py",
+    "--engine",
+    "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+    "--engine",
+    "abjchess=abjchess",
+    "--games",
+    "1000",
+    "--tc",
+    "60+0.6",
+    "--threads",
+    "8",
+    "--hash",
+    "1024",
+    "--concurrency",
+    "1",
+    "--seed",
+    "72335360501015",
+    "--scores",
+    "--resume",
+    "--out",
+    "engine/runs/f60t8-v015g-abjchess"
+  ],
+  "created_utc": "2026-10-05T16:21:25Z",
+  "source": {
+    "commit": "cf984672c76776a40086a310c5a3cd849b4ba9bd",
+    "describe": "jqe-v0.15g-3-gcf984672",
+    "engine_src_dirty": false
+  },
+  "host": {
+    "cpu": "Intel(R) Core(TM) i9-14900K",
+    "logical_cpus": 32,
+    "kernel": "6.18.40.1-microsoft-standard-WSL2",
+    "loadavg_at_start": [
+      9.1083984375,
+      9.173828125,
+      9.76953125
+    ]
+  },
+  "notes": "Engine failures void a game (void.jsonl, replayed once); time forfeits count as losses."
+}

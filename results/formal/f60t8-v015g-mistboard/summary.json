@@ -1,0 +1,45 @@
+{
+  "a": "jqe",
+  "b": "mistboard",
+  "games": 1000,
+  "w": 761,
+  "d": 20,
+  "l": 219,
+  "score": 0.771,
+  "elo": 210.88755828442754,
+  "elo_lo": 186.54632635119285,
+  "elo_hi": 237.23314373580456,
+  "pent": {
+    "pairs": 500,
+    "score": 0.771,
+    "elo": 210.88755828442754,
+    "elo_lo": 187.20255876260674,
+    "elo_hi": 236.46589083727622
+  },
+  "reasons": {
+    "BLACK_LOSES": 528,
+    "RED_LOSES": 452,
+    "DRAW": 20
+  },
+  "args": {
+    "engine": [
+      "jqe=engine/bin/jqe-v0.15g:EvalFile=engine/nets/it014.jqn",
+      "mistboard=mistboard"
+    ],
+    "games": 1000,
+    "movetime": 0,
+    "tc": "60+0.6",
+    "depth": 0,
+    "nodes": 0,
+    "hash": 1024,
+    "threads": 8,
+    "concurrency": 1,
+    "seed": 72335360501015,
+    "out": "engine/runs/f60t8-v015g-mistboard",
+    "scores": true,
+    "resume": true,
+    "ponder": false,
+    "random_plies": 0,
+    "sprt": null
+  }
+}
